@@ -1,3 +1,6 @@
+>[!WARNING]
+>CLASSIC HUD IS CURRENTLY BROKEN ON OPENGL
+
 # FROWN
 A SmileOS 2.0 compatibility layer for UNIX-like operating systems.
 
