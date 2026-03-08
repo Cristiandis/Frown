@@ -40,7 +40,7 @@ In theory, it could as long as no Windows specific dependencies are added to the
 No. That's just a silly lore bit. I like the aesthetic of SmileOS 2.0.
 
 ### Is this endorsed by the ULTRAKILL development team?
-No, but it also hasn't been denounced. Yet. If they ask me to take this down, I will. If any of them are reading this and want me to take it down, they can contact me via Discord or [Email](mailto:coatlessali@protonmail.com).
+No, but it also hasn't been denounced. Yet. If they ask me to take this down, I will. If any of them are reading this and want me to take it down, they can contact me via Discord or [Email](mailto:frownissue@izzoserver.top).
 
 ### Can I speedrun with this?
 No. Speedrun mods have stated that any addition to the game files is not legal for runs. Use WINE/Proton/CrossOver instead.
