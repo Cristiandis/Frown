@@ -323,15 +323,12 @@ public partial class Frown : Node2D
 		// Mangohud
 		hud = "MANGOHUD=0";
 		if(mangohud)
-			switch(backend){
-				case (byte) RenderAPI.Vulkan: hud = "MANGOHUD=1"; break;
-				case (byte) RenderAPI.OpenGL: hud = "mangohud --dlsym"; break;
-			}	
+			hud = "mangohud";
 		
 		// Launch command
 		launch = "./ULTRAKILL.x86_64";
 		if (modStatus)
-			launch = "./run_bepinex.sh ULTRAKILL.x86_64";
+			launch = "./run_bepinex.sh ./ULTRAKILL.x86_64";
 		
 		// Render API
 		force = "-force-glcore";

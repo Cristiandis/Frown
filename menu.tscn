@@ -1,23 +1,23 @@
-[gd_scene load_steps=28 format=3 uid="uid://ddo553r4bg12y"]
+[gd_scene format=3 uid="uid://ddo553r4bg12y"]
 
-[ext_resource type="Script" uid="uid://pqhtgys3qw8x" path="res://cs/Frown.cs" id="1_o15y0"]
-[ext_resource type="Script" uid="uid://chf0svbevv75y" path="res://cs/Progress.cs" id="2_1xdwo"]
+[ext_resource type="Script" uid="uid://dpoeda266fuw3" path="res://cs/Frown.cs" id="1_o15y0"]
+[ext_resource type="Script" uid="uid://428wx3lbquqy" path="res://cs/Progress.cs" id="2_1xdwo"]
 [ext_resource type="Script" uid="uid://cjetgb3v0jj5o" path="res://gd/button_desc.gd" id="2_gd0jp"]
 [ext_resource type="Theme" uid="uid://22q8psrdhqtp" path="res://menu.theme" id="4_ecwwl"]
-[ext_resource type="Script" uid="uid://ctpavcg1gvmmm" path="res://cs/UkPath.cs" id="4_wij6f"]
-[ext_resource type="Script" uid="uid://d27saoc78nxu5" path="res://cs/BaseZip.cs" id="4_y0p7p"]
+[ext_resource type="Script" uid="uid://bu6dsc6sbe0rn" path="res://cs/UkPath.cs" id="4_wij6f"]
+[ext_resource type="Script" uid="uid://dfmhnk3lc10ue" path="res://cs/BaseZip.cs" id="4_y0p7p"]
 [ext_resource type="Texture2D" uid="uid://c0k6ceyh264fk" path="res://assets/white.png" id="5_3ls4m"]
-[ext_resource type="Script" uid="uid://cn1rauoq1sfbg" path="res://cs/Acf.cs" id="5_lg015"]
-[ext_resource type="Script" uid="uid://bg1y5nth3cfo4" path="res://cs/LaunchCommand.cs" id="6_4ndjb"]
+[ext_resource type="Script" uid="uid://cahh5bputqlgx" path="res://cs/Acf.cs" id="5_lg015"]
+[ext_resource type="Script" uid="uid://crxip5mkvf12l" path="res://cs/LaunchCommand.cs" id="6_4ndjb"]
 [ext_resource type="FontFile" uid="uid://jsnp4a1vnwe6" path="res://fonts/windows-xp-tahoma.ttf" id="8_dwrpx"]
 [ext_resource type="Texture2D" uid="uid://d3556cxb385mm" path="res://assets/button-red-dark.png" id="8_iqepy"]
-[ext_resource type="Script" uid="uid://45py52d4rdt2" path="res://cs/Description.cs" id="9_g7jxm"]
+[ext_resource type="Script" uid="uid://otaq3rqufg3j" path="res://cs/Description.cs" id="9_g7jxm"]
 [ext_resource type="Texture2D" uid="uid://dlv6pr1l811fg" path="res://assets/button-red-bright.png" id="9_h1wq0"]
 [ext_resource type="Texture2D" uid="uid://ctnrnsxagwa30" path="res://assets/button-red.png" id="10_dwrpx"]
-[ext_resource type="Script" uid="uid://bwjibpo8q0iuf" path="res://cs/API.cs" id="11_3ls4m"]
-[ext_resource type="Script" uid="uid://bfb02t8sx6we" path="res://cs/Wayland.cs" id="12_5h80m"]
+[ext_resource type="Script" uid="uid://dxhfik0gn25qm" path="res://cs/API.cs" id="11_3ls4m"]
+[ext_resource type="Script" uid="uid://chwuxppj7vegk" path="res://cs/Wayland.cs" id="12_5h80m"]
 [ext_resource type="Texture2D" uid="uid://5566bweijk4x" path="res://assets/smile-left.png" id="13_oxnod"]
-[ext_resource type="Script" uid="uid://c1dfydiintqhl" path="res://cs/MangoHud.cs" id="13_w25hu"]
+[ext_resource type="Script" uid="uid://cykgj20yt0mqk" path="res://cs/MangoHud.cs" id="13_w25hu"]
 [ext_resource type="Texture2D" uid="uid://nt1r2d2kdmo" path="res://assets/smile-middle.png" id="14_gd0jp"]
 [ext_resource type="Texture2D" uid="uid://d3kufamybw8l8" path="res://assets/smile-right.png" id="15_4ndjb"]
 [ext_resource type="Script" uid="uid://b3joi2ngxcixb" path="res://gd/accept_dialog.gd" id="21_td6mg"]
@@ -25,22 +25,22 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecwwl"]
 bg_color = Color(0.0997504, 0.0997504, 0.0997503, 1)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ndjb"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gd0jp"]
 texture = ExtResource("10_dwrpx")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g7jxm"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oxnod"]
 texture = ExtResource("8_iqepy")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jspdm"]
 texture = ExtResource("9_h1wq0")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oxnod"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g7jxm"]
 texture = ExtResource("8_iqepy")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gd0jp"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ndjb"]
 texture = ExtResource("10_dwrpx")
 
-[node name="Frown" type="Node2D" node_paths=PackedStringArray("_progress", "_install", "_uninstall", "_command", "_launch", "_save", "_deleteBackup", "_mods", "_api", "_wayland", "_mangohud", "_ukPath", "_baseZip")]
+[node name="Frown" type="Node2D" unique_id=849352941 node_paths=PackedStringArray("_progress", "_install", "_uninstall", "_command", "_launch", "_save", "_deleteBackup", "_mods", "_api", "_wayland", "_mangohud", "_ukPath", "_baseZip")]
 script = ExtResource("1_o15y0")
 _progress = NodePath("Progress")
 _install = NodePath("Buttons/Install")
@@ -56,13 +56,13 @@ _mangohud = NodePath("Switches/MangoHud")
 _ukPath = NodePath("ukPath")
 _baseZip = NodePath("baseZip")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=251199214]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Progress" type="RichTextLabel" parent="." node_paths=PackedStringArray("_log")]
+[node name="Progress" type="RichTextLabel" parent="." unique_id=1566000760 node_paths=PackedStringArray("_log")]
 offset_top = 317.0
 offset_right = 768.0
 offset_bottom = 432.0
@@ -72,7 +72,7 @@ vertical_alignment = 2
 script = ExtResource("2_1xdwo")
 _log = NodePath("../Buttons/Log")
 
-[node name="ButtonDesc" type="RichTextLabel" parent="."]
+[node name="ButtonDesc" type="RichTextLabel" parent="." unique_id=1154488310]
 offset_left = 256.0
 offset_top = 128.0
 offset_right = 512.0
@@ -81,9 +81,9 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_ecwwl")
 text = "Move the mouse cursor over a button to see a description."
 script = ExtResource("2_gd0jp")
 
-[node name="Buttons" type="Node" parent="."]
+[node name="Buttons" type="Node" parent="." unique_id=1212651261]
 
-[node name="UkPathButton" type="Button" parent="Buttons"]
+[node name="UkPathButton" type="Button" parent="Buttons" unique_id=687037975]
 offset_left = 514.0
 offset_top = 129.0
 offset_right = 640.0
@@ -93,13 +93,13 @@ theme_override_font_sizes/font_size = 16
 text = "Select path..."
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/UkPathButton"]
+[node name="Border" type="Sprite2D" parent="Buttons/UkPathButton" unique_id=52459049]
 z_index = -1
 position = Vector2(63, 14)
 scale = Vector2(128, 30)
 texture = ExtResource("5_3ls4m")
 
-[node name="Install" type="Button" parent="Buttons"]
+[node name="Install" type="Button" parent="Buttons" unique_id=1201103382]
 offset_left = 514.0
 offset_top = 161.0
 offset_right = 576.0
@@ -109,13 +109,13 @@ theme_override_font_sizes/font_size = 16
 text = "Install..."
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/Install"]
+[node name="Border" type="Sprite2D" parent="Buttons/Install" unique_id=1378988360]
 z_index = -1
 position = Vector2(63, 13.5)
 scale = Vector2(128, 29)
 texture = ExtResource("5_3ls4m")
 
-[node name="Uninstall" type="Button" parent="Buttons"]
+[node name="Uninstall" type="Button" parent="Buttons" unique_id=639276705]
 offset_left = 577.0
 offset_top = 161.0
 offset_right = 640.0
@@ -125,7 +125,7 @@ theme_override_font_sizes/font_size = 16
 text = "Uninstall..."
 metadata/_edit_group_ = true
 
-[node name="DeleteBackup" type="Button" parent="Buttons"]
+[node name="DeleteBackup" type="Button" parent="Buttons" unique_id=1718614826]
 offset_left = 514.0
 offset_top = 192.0
 offset_right = 640.0
@@ -135,13 +135,13 @@ theme_override_font_sizes/font_size = 16
 text = "Delete Backup..."
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/DeleteBackup"]
+[node name="Border" type="Sprite2D" parent="Buttons/DeleteBackup" unique_id=4862186]
 z_index = -1
 position = Vector2(63, 14)
 scale = Vector2(128, 30)
 texture = ExtResource("5_3ls4m")
 
-[node name="LaunchCommand" type="Button" parent="Buttons"]
+[node name="LaunchCommand" type="Button" parent="Buttons" unique_id=147874610]
 offset_left = 514.0
 offset_top = 224.0
 offset_right = 640.0
@@ -152,13 +152,13 @@ text = "Copy Command..."
 script = ExtResource("6_4ndjb")
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/LaunchCommand"]
+[node name="Border" type="Sprite2D" parent="Buttons/LaunchCommand" unique_id=1759060225]
 z_index = -1
 position = Vector2(63, 14)
 scale = Vector2(128, 30)
 texture = ExtResource("5_3ls4m")
 
-[node name="ACF" type="Button" parent="Buttons"]
+[node name="ACF" type="Button" parent="Buttons" unique_id=1511893566]
 offset_left = 514.0
 offset_top = 255.0
 offset_right = 640.0
@@ -169,13 +169,13 @@ text = "Create ACF..."
 script = ExtResource("5_lg015")
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/ACF"]
+[node name="Border" type="Sprite2D" parent="Buttons/ACF" unique_id=1215167971]
 z_index = -1
 position = Vector2(63, 13.5)
 scale = Vector2(128, 29)
 texture = ExtResource("5_3ls4m")
 
-[node name="Launch" type="Button" parent="Buttons"]
+[node name="Launch" type="Button" parent="Buttons" unique_id=1386360227]
 offset_left = 514.0
 offset_top = 286.0
 offset_right = 640.0
@@ -183,22 +183,22 @@ offset_bottom = 314.0
 theme = ExtResource("4_ecwwl")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxTexture_4ndjb")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_g7jxm")
-theme_override_styles/hover = SubResource("StyleBoxTexture_jspdm")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_oxnod")
 theme_override_styles/normal = SubResource("StyleBoxTexture_gd0jp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_oxnod")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jspdm")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_g7jxm")
+theme_override_styles/focus = SubResource("StyleBoxTexture_4ndjb")
 disabled = true
 text = "Launch..."
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/Launch"]
+[node name="Border" type="Sprite2D" parent="Buttons/Launch" unique_id=2056938593]
 z_index = -1
 position = Vector2(63, 14)
 scale = Vector2(128, 30)
 texture = ExtResource("5_3ls4m")
 
-[node name="Log" type="Button" parent="Buttons"]
+[node name="Log" type="Button" parent="Buttons" unique_id=1973730247]
 offset_left = 128.0
 offset_top = 255.0
 offset_right = 254.0
@@ -208,13 +208,13 @@ theme_override_font_sizes/font_size = 16
 text = "Copy log..."
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/Log"]
+[node name="Border" type="Sprite2D" parent="Buttons/Log" unique_id=134495320]
 z_index = -1
 position = Vector2(63, 13.5)
 scale = Vector2(128, 29)
 texture = ExtResource("5_3ls4m")
 
-[node name="Save" type="Button" parent="Buttons"]
+[node name="Save" type="Button" parent="Buttons" unique_id=2045006096]
 offset_left = 128.0
 offset_top = 287.0
 offset_right = 254.0
@@ -224,15 +224,15 @@ theme_override_font_sizes/font_size = 16
 text = "Save changes..."
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Buttons/Save"]
+[node name="Border" type="Sprite2D" parent="Buttons/Save" unique_id=652799223]
 z_index = -1
 position = Vector2(63, 13.5)
 scale = Vector2(128, 29)
 texture = ExtResource("5_3ls4m")
 
-[node name="Switches" type="Node" parent="."]
+[node name="Switches" type="Node" parent="." unique_id=2125329922]
 
-[node name="Mods" type="CheckButton" parent="Switches"]
+[node name="Mods" type="CheckButton" parent="Switches" unique_id=415392307]
 offset_left = 128.0
 offset_top = 129.0
 offset_right = 254.0
@@ -242,13 +242,13 @@ text = "Mods"
 alignment = 1
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Switches/Mods"]
+[node name="Border" type="Sprite2D" parent="Switches/Mods" unique_id=1147710924]
 z_index = -1
 position = Vector2(63, 14)
 scale = Vector2(128, 30)
 texture = ExtResource("5_3ls4m")
 
-[node name="API" type="CheckButton" parent="Switches"]
+[node name="API" type="CheckButton" parent="Switches" unique_id=1367558309]
 offset_left = 128.0
 offset_top = 161.0
 offset_right = 254.0
@@ -259,13 +259,13 @@ alignment = 1
 script = ExtResource("11_3ls4m")
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Switches/API"]
+[node name="Border" type="Sprite2D" parent="Switches/API" unique_id=42928468]
 z_index = -1
 position = Vector2(63, 13.5)
 scale = Vector2(128, 29)
 texture = ExtResource("5_3ls4m")
 
-[node name="Wayland" type="CheckButton" parent="Switches"]
+[node name="Wayland" type="CheckButton" parent="Switches" unique_id=572484311]
 offset_left = 128.0
 offset_top = 193.0
 offset_right = 254.0
@@ -276,13 +276,13 @@ alignment = 1
 script = ExtResource("12_5h80m")
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Switches/Wayland"]
+[node name="Border" type="Sprite2D" parent="Switches/Wayland" unique_id=1082458663]
 z_index = -1
 position = Vector2(63, 13.5)
 scale = Vector2(128, 29)
 texture = ExtResource("5_3ls4m")
 
-[node name="MangoHud" type="CheckButton" parent="Switches"]
+[node name="MangoHud" type="CheckButton" parent="Switches" unique_id=1993603423]
 offset_left = 128.0
 offset_top = 224.0
 offset_right = 254.0
@@ -293,13 +293,13 @@ alignment = 1
 script = ExtResource("13_w25hu")
 metadata/_edit_group_ = true
 
-[node name="Border" type="Sprite2D" parent="Switches/MangoHud"]
+[node name="Border" type="Sprite2D" parent="Switches/MangoHud" unique_id=654339098]
 z_index = -1
 position = Vector2(63, 13.5)
 scale = Vector2(128, 29)
 texture = ExtResource("5_3ls4m")
 
-[node name="ukPath" type="FileDialog" parent="." node_paths=PackedStringArray("_ukb")]
+[node name="ukPath" type="FileDialog" parent="." unique_id=426261173 node_paths=PackedStringArray("_ukb")]
 title = "Open a Directory"
 position = Vector2i(8, 32)
 size = Vector2i(752, 394)
@@ -310,7 +310,7 @@ show_hidden_files = true
 script = ExtResource("4_wij6f")
 _ukb = NodePath("../Buttons/UkPathButton")
 
-[node name="baseZip" type="FileDialog" parent="." node_paths=PackedStringArray("_ins")]
+[node name="baseZip" type="FileDialog" parent="." unique_id=1716196588 node_paths=PackedStringArray("_ins")]
 title = "Open a File"
 position = Vector2i(8, 32)
 size = Vector2i(750, 394)
@@ -321,7 +321,7 @@ show_hidden_files = true
 script = ExtResource("4_y0p7p")
 _ins = NodePath("../Buttons/Install")
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." unique_id=292629319]
 offset_left = 256.0
 offset_top = 48.0
 offset_right = 512.0
@@ -333,7 +333,7 @@ text = "FROWN"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="Title"]
+[node name="Description" type="Label" parent="Title" unique_id=1573748424]
 layout_mode = 0
 offset_left = -128.0
 offset_top = 32.0
@@ -345,7 +345,7 @@ text = "A SmileOS 2.0 compatibility layer for UNIX-like operating systems."
 horizontal_alignment = 1
 script = ExtResource("9_g7jxm")
 
-[node name="Button" type="Button" parent="Title"]
+[node name="Button" type="Button" parent="Title" unique_id=44406855]
 layout_mode = 0
 offset_left = 169.0
 offset_top = 6.0
@@ -354,27 +354,27 @@ offset_bottom = 27.0
 theme = ExtResource("4_ecwwl")
 text = "?"
 
-[node name="Window" type="Node" parent="."]
+[node name="Window" type="Node" parent="." unique_id=626441393]
 
-[node name="Left" type="Sprite2D" parent="Window"]
+[node name="Left" type="Sprite2D" parent="Window" unique_id=1660066757]
 visible = false
 position = Vector2(7.87499, 8)
 scale = Vector2(1.05, 1)
 texture = ExtResource("13_oxnod")
 
-[node name="Middle" type="Sprite2D" parent="Window"]
+[node name="Middle" type="Sprite2D" parent="Window" unique_id=1479802474]
 visible = false
 position = Vector2(371.625, 8)
 scale = Vector2(47.5167, 1)
 texture = ExtResource("14_gd0jp")
 
-[node name="Right" type="Sprite2D" parent="Window"]
+[node name="Right" type="Sprite2D" parent="Window" unique_id=994566910]
 visible = false
 position = Vector2(745.25, 8)
 scale = Vector2(1.05814, 1)
 texture = ExtResource("15_4ndjb")
 
-[node name="AcceptDialog" type="AcceptDialog" parent="."]
+[node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=1841537988]
 title = "Help"
 initial_position = 2
 size = Vector2i(669, 364)
